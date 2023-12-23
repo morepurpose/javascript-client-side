@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab04</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+
+    <form id="registrationForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="Name"><br>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <input type="button" id="submit" value="Submit">
+    </form>
+
+    <div id="display"></div>
+
+    <h2> Character Count </h2>
+
+    <textarea id="textArea" onkeyup="countCharacter()"></textarea>
+    <p id="totalChars"></p>
+    <p id="totalLetters"></p>
+
+    <h2> Bookmarks</h2>
+    <div id="bookmarks"></div>
+
+    <script src="prob1.js"></script>
+</body>
+</html>
